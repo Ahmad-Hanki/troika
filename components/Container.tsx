@@ -4,9 +4,10 @@ type ContainerProps = {
   clas?: string;
 };
 
-const Container = ({children,clas} : ContainerProps) => {
+const Container = ({ children, clas }: ContainerProps) => {
   return (
-    <div className={`${clas}" max-w-7xl 3xl:max-w-[100rem] mx-auto px-4"`} >
+    <div className={`${clas}" max-w-7xl 2xl:max-w-[1500px]  3xl:max-w-[110rem]
+     mx-auto px-4 "`}>
       {children}
     </div>
   );

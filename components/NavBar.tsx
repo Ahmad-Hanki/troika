@@ -2,13 +2,13 @@ import { Button } from "@/components/ui/button";
 import Container from "./Container";
 import Link from "next/link";
 import MobileBar from "./MobileNav";
+import Logo from "./Logo";
 function NavBar() {
   return (
     <header className="bg-background">
-      <Container clas="  py-10 justify-between lg:px-12 hidden lg:flex ">
-       <div className="flex space-x-4 items-center">
-          <h2 className=" text-xl md:text-4xl font-bold uppercase text-white">troika</h2>
-        </div>
+      <Container clas="  py-10 justify-between  hidden lg:flex lg:px-8 xl:px-4 ">
+      <Logo />
+        <div className="flex space-x-44">
         <nav className="space-x-12 xl:space-x-20 font-light items-center text-textColor flex">
           <Button asChild variant={"ghost"}>
             <Link href="/">Home</Link>
@@ -31,6 +31,7 @@ function NavBar() {
           >
             <Link href="/contact">Contact Us</Link>
           </Button>
+        </div>
         </div>
         </Container>
       <MobileBar />
