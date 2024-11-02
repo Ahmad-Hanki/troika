@@ -9,7 +9,8 @@ function NavBar() {
       <Container clas="  py-10 justify-between  hidden lg:flex lg:px-8 xl:px-4 ">
       <Logo />
         <div className="flex space-x-44">
-        <nav className="space-x-12 xl:space-x-20 font-light items-center text-textColor flex">
+        <nav className="space-x-12
+         xl:space-x-20 font-light items-center text-textColor flex">
           <Button asChild variant={"ghost"}>
             <Link href="/">Home</Link>
           </Button>

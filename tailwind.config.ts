@@ -20,6 +20,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        textColorSec: "#5e5e5e",
         textColor: "rgb(160 160 160)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -63,6 +64,7 @@ const config: Config = {
         },
       },
       screens: {
+        xs: "450px",
         "3xl": "1760px",
       },
     },

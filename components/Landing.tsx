@@ -4,6 +4,7 @@ import Container from "./Container";
 function Landing() {
   return (
     <>
+    {/* section-1 */}
       <section className="w-full h-[87vh] ">
         <div
           className="bg-cover bg-center  2xl:bg-top w-full h-full"
@@ -22,7 +23,7 @@ function Landing() {
               <h1
                 className="
           text-textColor
-          text-5xl leading-[65px] 
+          text-[43px] leading-[65px] 
           sm:text-6xl sm:leading-[75px]
           md:leading-[80px]
           lg:w-[74%]
@@ -37,7 +38,7 @@ function Landing() {
                 className="
           
           text-white
-          text-5xl leading-[65px]
+          text-[43px] leading-[65px]
           sm:text-6xl sm:leading-[75px]
           md:leading-[80px]
           lg:text-7xl lg:leading-[90px]
@@ -49,8 +50,10 @@ function Landing() {
           </Container>
         </div>
       </section>
+      {/* section-2 */}
       <div
-        className="w-full h-[75vh] bg-cover bg-center flex justify-center items-center"
+        className="w-full h-[75vh] bg-cover
+         bg-center flex justify-center items-center"
         style={{ backgroundImage: `url("/landing-2.jpg")` }}
       >
         <Container
@@ -59,7 +62,8 @@ function Landing() {
           3xl:px-20 "
         >
           <div
-            className="flex flex-col justify-center items-center text-center px-2 text-black
+            className="flex
+             flex-col justify-center items-center text-center text-black
           space-y-16
           3xl:space-y-32"
           >
@@ -68,7 +72,8 @@ function Landing() {
             text-3xl
             sm:text-4xl
             lg:text-5xl
-            3xl:text-6xl"
+            xl:text-6xl
+            3xl:text-7xl"
             >
               OUR PHILOSOPHY
             </h3>
@@ -77,8 +82,10 @@ function Landing() {
             text-xl
             md:max-w-[90%]
             lg:max-w-[100%]
-            lg:text-2xl
-            3xl:text-4xl 3xl:max-w-[100%]"
+            lg:text-3xl
+            xl:text-4xl
+            font-light
+            3xl:text-5xl "
             >
               is to ensure that our work aligns with your objectives, creating
               unforgettable events that leave a lasting impact while effectively
@@ -87,11 +94,14 @@ function Landing() {
           </div>
         </Container>
       </div>
-      <div className="bg-white  py-7">
+      {/* section-3 */}
+      <div className="bg-white  py-10  3xl:px-28">
         <Container
           clas=" sm:px-8 
           md:px-12
           lg:px-20
+          xl:px-24
+          2xl:px-16
           3xl:px-32 "
         >
           <div
@@ -101,7 +111,7 @@ function Landing() {
             <LandingItem title="TRUSTWORTHY PRODUCTION" url="/trust.webp" />
             <LandingItem title="COMMITMENT TO QUALITY" url="/quality.webp" />
             <LandingItem
-              addClass=" -mt-1 "
+              addClass="  w-[80px] "
               title="ADHERE TO TIME"
               url="/time.webp"
             />
