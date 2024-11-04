@@ -8,7 +8,7 @@ type ServicesItemProps = {
 function ServicesItem({ url, title,text,addClass }: ServicesItemProps) {
   return (
     <div className="flex flex-col relative hover:bg-primary
-     space-y-8 p-3 md:p-5   max-md:text-center max-md:justify-center max-md:items-center card
+     space-y-8 max-sm:py-12 max-sm:px-3 sm:p-3 md:p-5   max-md:text-center max-md:justify-center max-md:items-center card
       w-[90%] xs:w-[300px] sm:w-[320px] lg:w-[95%]  2xl:w-[400px] 2xl:p-12 ">
         <i className={` ${url} " text-textColor text-[60px] "`}></i>
         <h3 className="text-white

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -80,14 +85,25 @@
 .photo-2 {
   filter: grayscale(0.4) contrast(1.2) brightness(0.8);
 }
-.card::after{
-  content: ' ';
+.photo-3 {
+  filter: grayscale(0.7) contrast(0.5) brightness(0.6);
+}
+.card::after {
+  content: " ";
   right: 0;
   top: 0;
   z-index: 3;
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 100px solid 	#141519;
+  border-top: 100px solid #141519;
   border-left: 100px solid transparent;
+}
+.showCase {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slide {
+  margin-bottom: 100px;
 }

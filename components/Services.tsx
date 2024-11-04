@@ -12,11 +12,12 @@ interface Service {
 
 function Services() {
   return (
-    <div className="py-44  flex flex-col space-y-44">
-      <Container clas=" sm:px-8 md:px-[10%] lg:px-[7%] xl:px-[6%] 2xl:px-[7%] 3xl:px-[227px] mx-0 ">
+    <div id="services" className="py-44  flex flex-col space-y-44 ">
+      <Container clas=" sm:px-8 md:px-[10%] lg:px-[7%] xl:px-[6%]
+       2xl:px-[7%] 3xl:px-[227px] md:mx-0 ">
         <h3
-          className="text-3xl xl:text-5xl md:text-start text-center
-                 3xl:text-6xl"
+          className="text-4xl xl:text-5xl md:text-start text-center
+                  uppercase font-semibold"
         >
           Services
         </h3>

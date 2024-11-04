@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import 'remixicon/fonts/remixicon.css'
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark scroll-smooth	scroll-mt-5">
       <body className={inter.className}>
         <NavBar />
-        {children}</body>
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }

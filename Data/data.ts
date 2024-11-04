@@ -31,3 +31,63 @@ export const services =[
         url: "ri-calendar-close-fill"
     }
 ]
+
+export const gallery = [
+    {
+       id: 1,
+       year: "2022",
+       title: "JEWLERY",
+       url: "/event-1.jpg",
+    },
+    {
+        id: 2,
+        year: "2021",
+        title: "FOOD",
+        url: "/event-2.jpg",
+    },
+    {
+        id: 3,
+        year: "2022",
+        title: "GOVERNMENT",
+        url: "/event-3.jpg",
+    },
+    {
+        id: 4,
+        year: "2022",
+        title: "SOFT DRINKS",
+        url: "/event-4.jpeg",
+    },
+    {
+        id: 5,
+        year: "2022",
+        title: "TECH",
+        url: "/event-5.jpg",
+    },
+]
+
+export const company = [
+    {
+        id: 1,
+        url : "/comp-1.png"
+    },
+    {
+        id: 2,
+        url : "/comp-2.png"
+    },
+    {
+        id: 3,
+        url : "/comp-3.png"
+    },
+    {
+        id: 4,
+        url : "/comp-4.png"
+    },
+    {
+        id: 5,
+        url : "/comp-5.png"
+    },
+    {
+        id: 6,
+        url : "/comp-6.png"
+    }
+]

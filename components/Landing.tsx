@@ -11,8 +11,11 @@ function Landing() {
           style={{ backgroundImage: `url("/landing.png")` }}
         >
           <Container
-            clas=" sm:px-8 
-          md:px-12
+            clas="
+            px-9
+            xs:px-10
+            sm:px-12
+          md:px-16
           lg:px-20
           3xl:px-32 "
           >
@@ -52,8 +55,8 @@ function Landing() {
       </section>
       {/* section-2 */}
       <div
-        className="w-full h-[75vh] bg-cover
-         bg-center flex justify-center items-center"
+        className="w-full  py-56
+         bg-left-bottom  flex justify-center items-center"
         style={{ backgroundImage: `url("/landing-2.jpg")` }}
       >
         <Container
