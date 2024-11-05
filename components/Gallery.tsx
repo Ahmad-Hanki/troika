@@ -6,7 +6,7 @@ import { gallery, company } from "../Data/data";
 import Images from "./ui/Images";
 import Container from "./Container";
 import { useRef } from "react";
-import MotionDiv from "./MotionDiv";
+import MotionDiv, { MotionH2 } from "./MotionDiv";
 
 function SampleNextArrow(props: {
   className?: any;
@@ -145,12 +145,15 @@ function Gallery() {
           clas=" sm:px-8 md:px-[9%] lg:px-[6%] xl:px-[5%]
        2xl:px-[6%] 3xl:px-[150px] md:mx-0 "
         >
-          <h3
+          <MotionH2
+            initial={{ x: -30, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.5, type: "spring" }}
             className="text-4xl xl:text-5xl md:text-start text-center
              text-black  uppercase font-semibold"
           >
             PROJECT GALLERY
-          </h3>
+          </MotionH2>
         </Container>
 
         {/* sliding section */}
@@ -212,26 +215,32 @@ function Gallery() {
         >
           <GalleryItem
             url={company[0].url}
+            delay={0.3}
             addClass=" w-[80%] h-[90%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
           />
           <GalleryItem
             url={company[1].url}
+            delay={0.5}
             addClass=" w-[60%] h-[50%] sm:w-[60%] sm:h-[45%]  xl:w-[150px] xl:h-[100px] photo-3 "
           />
           <GalleryItem
             url={company[2].url}
+            delay={0.7}
             addClass=" w-[60%] h-[50%] sm:w-[60%] sm:h-[45%]  xl:w-[150px] xl:h-[100px] photo-3 "
           />
           <GalleryItem
             url={company[3].url}
+            delay={0.9}
             addClass=" w-[60%] h-[50%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
           />
           <GalleryItem
             url={company[4].url}
+            delay={1.1}
             addClass=" w-[70%] h-[60%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
           />
           <GalleryItem
             url={company[5].url}
+            delay={1.3}
             addClass=" w-[70%] h-[65%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
           />
         </Container>

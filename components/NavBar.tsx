@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
 import Container from "./Container";
 import Link from "next/link";
-import MobileBar from "./MobileNav";
 import Logo from "./Logo";
 import MobileNavbar from "./MobileNavbar";
+import MotionDiv from "./MotionDiv";
 function NavBar() {
   return (
-    <header className="bg-background">
+    <MotionDiv
+    initial={{ y: -100 }}
+    animate={{ y: 0 }}
+    transition={{ duration: 2 , type: "spring", delay: 0.2 }}
+    className="bg-background">
       <Container clas="  py-10 justify-between  hidden lg:flex lg:px-8 xl:px-4 ">
         <Logo />
         <div className="flex space-x-44">
@@ -39,7 +43,7 @@ function NavBar() {
         </div>
       </Container>
       <MobileNavbar/>
-    </header>
+    </MotionDiv>
   );
 }
 

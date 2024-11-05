@@ -2,6 +2,7 @@
 import Container from "./Container";
 import { useForm, type FieldValues } from "react-hook-form";
 import { Button } from "@/components/ui/button";
+import { MotionForm, MotionH2 } from "./MotionDiv";
 
 function Contact() {
   const {
@@ -28,14 +29,20 @@ function Contact() {
          items-center
           lg:space-x-[102px] xl:space-x-[123px] 2xl:space-x-[170px] 3xl:space-x-64 text-center "
       >
-        <h3
+        <MotionH2
+          initial={{ x: -30, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring" }}
           className="text-4xl text-white  
          order-first  xl:w-fit text-nowrap -mt-32 lg:self-start xl:text-5xl 
          md:text-start text-center uppercase"
         >
           Contact us
-        </h3>
-        <form
+        </MotionH2>
+        <MotionForm
+          initial={{ y: -30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring", delay: 0.3 }}
           onSubmit={handleSubmit(onSubmit)}
           className=" relative
           w-[80%] xs:w-[75%] sm:w-[65%] md:max-lg:w-[60%] lg:max-w-[50%]
@@ -99,7 +106,7 @@ function Contact() {
           >
             Submit
           </Button>
-        </form>
+        </MotionForm>
       </Container>
     </section>
   );

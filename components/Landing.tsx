@@ -1,10 +1,11 @@
 import LandingItem from "./LandingItem";
 import Container from "./Container";
+import MotionDiv, { MotionH1, MotionH2,Motionp } from "./MotionDiv";
 
 function Landing() {
   return (
     <>
-    {/* section-1 */}
+      {/* section-1 */}
       <section className="w-full h-[87vh] ">
         <div
           className="bg-cover bg-center  2xl:bg-top w-full h-full"
@@ -23,7 +24,10 @@ function Landing() {
               className="
           pt-20 3xl:pt-28 "
             >
-              <h1
+              <MotionH1
+                initial={{ y: -30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: "spring", delay: 0.2 }}
                 className="
           text-textColor
           text-[43px] leading-[65px] 
@@ -36,10 +40,12 @@ function Landing() {
            3xl:text-8xl 3xl:max-w-[60%] 3xl:leading-[110px]"
               >
                 FROM PLANNING TO EXECUTION,
-              </h1>
-              <p
-                className="
-          
+              </MotionH1>
+              <MotionH2
+                initial={{ y: -30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.5, type: "spring", delay: 1 }}
+                className="  
           text-white
           text-[43px] leading-[65px]
           sm:text-6xl sm:leading-[75px]
@@ -48,7 +54,7 @@ function Landing() {
           3xl:text-8xl 3xl:leading-[110px]"
               >
                 ONE STREAM{" "}
-              </p>
+              </MotionH2>
             </div>
           </Container>
         </div>
@@ -70,7 +76,10 @@ function Landing() {
           space-y-16
           3xl:space-y-32"
           >
-            <h3
+            <MotionH2
+              initial={{ y: -30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.5, type: "spring"}}
               className="font-semibold
             text-3xl
             sm:text-4xl
@@ -79,8 +88,11 @@ function Landing() {
             3xl:text-7xl"
             >
               OUR PHILOSOPHY
-            </h3>
-            <p
+            </MotionH2>
+            <Motionp
+            initial={{ y: -30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5, type: "spring", delay: 0.5 }}
               className="
             text-xl
             md:max-w-[90%]
@@ -93,7 +105,7 @@ function Landing() {
               is to ensure that our work aligns with your objectives, creating
               unforgettable events that leave a lasting impact while effectively
               delivering your message.
-            </p>
+            </Motionp>
           </div>
         </Container>
       </div>
@@ -107,7 +119,10 @@ function Landing() {
           2xl:px-16
           3xl:px-32 "
         >
-          <div
+          <MotionDiv
+          initial={{ y: -30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring", delay: 0.6 }}
             className="flex flex-col max-lg:space-y-12  lg:flex-row
               justify-between"
           >
@@ -118,7 +133,7 @@ function Landing() {
               title="ADHERE TO TIME"
               url="/time.webp"
             />
-          </div>
+          </MotionDiv>
         </Container>
       </div>
     </>

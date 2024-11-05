@@ -2,6 +2,7 @@
 import ServicesItem from "./ServicesItem";
 import { services } from "../Data/data";
 import Container from "./Container";
+import { MotionH2 } from "./MotionDiv";
 
 interface Service {
   id: number;
@@ -13,14 +14,19 @@ interface Service {
 function Services() {
   return (
     <div id="services" className="py-44  flex flex-col space-y-44 ">
-      <Container clas=" sm:px-8 md:px-[10%] lg:px-[7%] xl:px-[6%]
-       2xl:px-[7%] 3xl:px-[227px] md:mx-0 ">
-        <h3
+      <Container
+        clas=" sm:px-8 md:px-[10%] lg:px-[7%] xl:px-[6%]
+       2xl:px-[7%] 3xl:px-[227px] md:mx-0 "
+      >
+        <MotionH2
+          initial={{ x: -30, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5, type: "spring" }}
           className="text-4xl xl:text-5xl md:text-start text-center
                   uppercase font-semibold"
         >
           Services
-        </h3>
+        </MotionH2>
       </Container>
       <Container
         clas=" grid 

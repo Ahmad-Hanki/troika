@@ -1,12 +1,17 @@
 import Image from "next/image";
+import MotionDiv from "./MotionDiv";
 type GalleryItemProps = {
   url: string;
   addClass?: string;
+  delay?: number;
 };
 
-function GalleryItem({ url, addClass }: GalleryItemProps) {
+function GalleryItem({ url, addClass, delay }: GalleryItemProps) {
   return (
-    <div
+    <MotionDiv
+      initial={{ y: -30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring",delay:delay }}
       className={` ${addClass} " aspect-square relative overflow-hidden  "`}
     >
       <Image
@@ -15,7 +20,7 @@ function GalleryItem({ url, addClass }: GalleryItemProps) {
         src={url}
         className=" object-contain object-center "
       />
-    </div>
+    </MotionDiv>
   );
 }
 
