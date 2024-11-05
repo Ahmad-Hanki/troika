@@ -68,6 +68,14 @@ const config: Config = {
         "3xl": "1760px",
       },
     },
+    fontFamily: {
+      AxiformaBold: ["var(--font-axiformaBold)"],
+      AxiformaMedium: ["var(--font-axiformaMedium)"],
+      AxiformaRegular: ["var(--font-axiformaRegular)"],
+      AxiformaLight: ["var(--font-axiformaLight)"],
+      MontserratVariableFontWght: ["var(--font-montserratVariableFontWght)"],
+      RalewayMedium: ["var(--font-ralewayMedium)"],
+    },
   },
   plugins: [require("tailwindcss-animate")],
 };
