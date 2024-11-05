@@ -3,6 +3,7 @@ import Container from "./Container";
 import Link from "next/link";
 import MobileBar from "./MobileNav";
 import Logo from "./Logo";
+import MobileNavbar from "./MobileNavbar";
 function NavBar() {
   return (
     <header className="bg-background">
@@ -37,7 +38,7 @@ function NavBar() {
           </div>
         </div>
       </Container>
-      <MobileBar />
+      <MobileNavbar/>
     </header>
   );
 }
