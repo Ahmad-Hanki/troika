@@ -6,19 +6,21 @@ type LogoProps = {
   addClass?: string;
 };
 
-const Images = ({ classs , url,addClass }: LogoProps) => {
+const Images = ({ classs, url, addClass }: LogoProps) => {
   return (
     <MotionDiv
-    initial={{ y: -30, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 1.5, type: "spring" }}
-    className={` ${classs} " aspect-square relative overflow-hidden"`}>
-        <Image
-          src={url}
-          alt={url}
-          fill
-          className={`" object-cover object-center " ${addClass}`}
-        />
+      initial={{ y: -30, opacity: 0 }}
+      viewport={{ once: true }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
+      className={` ${classs} " aspect-square relative overflow-hidden"`}
+    >
+      <Image
+        src={url}
+        alt={url}
+        fill
+        className={`" object-cover object-center " ${addClass}`}
+      />
     </MotionDiv>
   );
 };

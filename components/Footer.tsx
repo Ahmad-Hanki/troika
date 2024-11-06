@@ -20,6 +20,8 @@ function Footer() {
         />
         <MotionDiv
           initial={{ y: -30, opacity: 0 }}
+          viewport={{ once: true }}
+
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", delay: 0.1 }}
           className=" text-white
@@ -95,6 +97,8 @@ function Footer() {
         <hr className="lg:w-[103%] w-full lg:-ml-[17px] 2xl:-ml-[23px] h-[3px]  bg-textColor" />
         <MotionDiv
           initial={{ y: -30, opacity: 0 }}
+          viewport={{ once: true }}
+
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", delay: 0.4 }}
           className="py-7 text-textColor flex flex-col max-lg:space-y-5 lg:flex-row lg:justify-between"

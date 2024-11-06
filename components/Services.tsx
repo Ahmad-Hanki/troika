@@ -19,6 +19,8 @@ function Services() {
        2xl:px-[7%] 3xl:px-[227px] md:mx-0 "
       >
         <MotionH2
+                    viewport={{ once: true }}
+
           initial={{ x: -30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring" }}

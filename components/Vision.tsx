@@ -15,6 +15,8 @@ function Vision() {
           <div className="flex flex-col max-lg:space-y-24 lg:flex-row items-center justify-center justify-bewtween">
             <div className="flex flex-col space-y-12 lg:space-y-32 2xl:space-y-48 3xl:space-y-80 max-lg:justify-center max-lg:items-center max-lg:text-center">
               <MotionH2
+                          viewport={{ once: true }}
+
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5, type: "spring", delay: 0.3 }}
@@ -23,6 +25,8 @@ function Vision() {
                 VISION
               </MotionH2>
               <Motionp
+                          viewport={{ once: true }}
+
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5, type: "spring", delay: 0.5 }}

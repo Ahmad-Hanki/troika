@@ -7,6 +7,8 @@ import MotionDiv from "./MotionDiv";
 function NavBar() {
   return (
     <MotionDiv
+    viewport={{ once: true }}
+
     initial={{ y: -100 }}
     animate={{ y: 0 }}
     transition={{ duration: 2 , type: "spring", delay: 0.2 }}

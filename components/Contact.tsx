@@ -32,6 +32,8 @@ function Contact() {
         <MotionH2
           initial={{ x: -30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+
           transition={{ duration: 1.5, type: "spring" }}
           className="text-4xl text-white  
          order-first  xl:w-fit text-nowrap -mt-32 lg:self-start xl:text-5xl 
@@ -41,6 +43,8 @@ function Contact() {
         </MotionH2>
         <MotionForm
           initial={{ y: -30, opacity: 0 }}
+          viewport={{ once: true }}
+
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", delay: 0.3 }}
           onSubmit={handleSubmit(onSubmit)}

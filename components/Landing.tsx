@@ -26,6 +26,8 @@ function Landing() {
             >
               <MotionH1
                 initial={{ y: -30, opacity: 0 }}
+                viewport={{ once: true }}
+
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5, type: "spring", delay: 0.2 }}
                 className="
@@ -42,6 +44,8 @@ function Landing() {
                 FROM PLANNING TO EXECUTION,
               </MotionH1>
               <MotionH2
+                          viewport={{ once: true }}
+
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5, type: "spring", delay: 1 }}
@@ -78,6 +82,8 @@ function Landing() {
           >
             <MotionH2
               initial={{ y: -30, opacity: 0 }}
+              viewport={{ once: true }}
+
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.5, type: "spring"}}
               className="font-semibold
@@ -91,6 +97,8 @@ function Landing() {
             </MotionH2>
             <Motionp
             initial={{ y: -30, opacity: 0 }}
+            viewport={{ once: true }}
+
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5, type: "spring", delay: 0.5 }}
               className="
@@ -121,6 +129,8 @@ function Landing() {
         >
           <MotionDiv
           initial={{ y: -30, opacity: 0 }}
+          viewport={{ once: true }}
+
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", delay: 0.6 }}
             className="flex flex-col max-lg:space-y-12  lg:flex-row

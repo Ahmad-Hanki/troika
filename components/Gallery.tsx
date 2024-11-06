@@ -147,8 +147,10 @@ function Gallery() {
         >
           <MotionH2
             initial={{ x: -30, opacity: 0 }}
+            
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, type: "spring" }}
+            viewport={{ once: true }}
             className="text-4xl xl:text-5xl md:text-start text-center
              text-black  uppercase font-semibold"
           >
@@ -174,6 +176,8 @@ function Gallery() {
                   zIndex: 10,
                 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
+                viewport={{ once: true }}
+
                 key={item.id}
                 className=" w-[350px] relative "
               >
