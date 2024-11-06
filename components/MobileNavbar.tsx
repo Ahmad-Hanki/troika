@@ -24,22 +24,22 @@ const MobileNavbar = () => {
     {
       title: "Home",
       active: false,
-      url:"/"
+      url: "/",
     },
     {
       title: "About",
       active: false,
-      url:"#about"
+      url: "#about",
     },
     {
       title: "Services",
       active: false,
-      url:"#services"
+      url: "#services",
     },
     {
       title: "Portfolio",
       active: false,
-      url:"#portfolio"
+      url: "#portfolio",
     },
   ];
 
@@ -75,38 +75,40 @@ const MobileNavbar = () => {
 
             <div className="flex flex-col gap-8 mt-7 items-start ">
               {navLinks.map((link, index) => (
-            <Button
-            asChild
-            variant={"ghost"}
-            className={` ${link.active ? "text-primary" : "text-secondary-foreground" } " px-0 text-4xl hover:text-primary hover:bg-transparent "`}
-            onClick={closeMenu}
-          >
-            <Link href={link.url}>{link.title}</Link>
-          </Button>))}
-             </div>
+                <Button
+                  key={index}
+                  asChild
+                  variant={"ghost"}
+                  className={` ${
+                    link.active ? "text-primary" : "text-secondary-foreground"
+                  } " px-0 text-4xl hover:text-primary hover:bg-transparent "`}
+                  onClick={closeMenu}
+                >
+                  <Link href={link.url}>{link.title}</Link>
+                </Button>
+              ))}
+            </div>
             <div className="mt-10 flex flex-col gap-2">
               <p className="text-muted-foreground  text-lg">{"Get In Touch"}</p>
 
               <Link className="text-2xl" href={"mailto:itxti909@gmail.com"}>
-               Social@troikaprod.com
+                Social@troikaprod.com
               </Link>
             </div>
             <div className=" text-[#333] mt-10 flex flex-col gap-4">
-            <p className="text-muted-foreground  text-lg">
-             FOLLOW US
-             </p>
-            <div className="flex space-x-10 ">
-              <a href="https://www.linkedin.com/company/troika-events-production/">
-                <i className="ri-linkedin-box-fill bg-white rounded-[50%] px-2 py-2 text-[25px] hover:text-primary hover:cursor-pointer transition duration-300 ease-in-out  "></i>
-              </a>
-              <a href="https://x.com/troika_prod?s=21">
-                <i className="ri-twitter-x-line bg-white rounded-[50%] px-2 py-2 text-[25px] hover:text-primary hover:cursor-pointer transition duration-300 ease-in-out  "></i>
-              </a>
-              <a href="https://www.instagram.com/troika_prod">
-                <i className="ri-instagram-fill bg-white rounded-[50%] px-2 py-2 text-[25px] hover:text-primary hover:cursor-pointer transition duration-300 ease-in-out  "></i>
-              </a>
+              <p className="text-muted-foreground  text-lg">FOLLOW US</p>
+              <div className="flex space-x-10 ">
+                <a href="https://www.linkedin.com/company/troika-events-production/">
+                  <i className="ri-linkedin-box-fill bg-white rounded-[50%] px-2 py-2 text-[25px] hover:text-primary hover:cursor-pointer transition duration-300 ease-in-out  "></i>
+                </a>
+                <a href="https://x.com/troika_prod?s=21">
+                  <i className="ri-twitter-x-line bg-white rounded-[50%] px-2 py-2 text-[25px] hover:text-primary hover:cursor-pointer transition duration-300 ease-in-out  "></i>
+                </a>
+                <a href="https://www.instagram.com/troika_prod">
+                  <i className="ri-instagram-fill bg-white rounded-[50%] px-2 py-2 text-[25px] hover:text-primary hover:cursor-pointer transition duration-300 ease-in-out  "></i>
+                </a>
+              </div>
             </div>
-          </div>
           </motion.div>
         )}
       </AnimatePresence>
