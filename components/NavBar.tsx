@@ -12,7 +12,7 @@ function NavBar() {
     initial={{ y: -100 }}
     animate={{ y: 0 }}
     transition={{ duration: 2 , type: "spring", delay: 0.2 }}
-    className="bg-background">
+    className="bg-transparent w-full z-30">
       <Container clas="  py-10 justify-between  hidden lg:flex lg:px-8 xl:px-4 ">
         <Logo />
         <div className="flex space-x-44">

@@ -1,36 +1,41 @@
 import LandingItem from "./LandingItem";
 import Container from "./Container";
-import MotionDiv, { MotionH1, MotionH2,Motionp } from "./MotionDiv";
+import MotionDiv, { MotionH1, MotionH2, Motionp } from "./MotionDiv";
+import { AuroraBackground } from "./ui/aurora-background";
+import NavBar from "./NavBar";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 function Landing() {
   return (
     <>
       {/* section-1 */}
-      <section className="w-full h-[87vh] ">
-        <div
-          className="bg-cover bg-center  2xl:bg-top w-full h-full"
-          style={{ backgroundImage: `url("/landing.png")` }}
-        >
-          <Container
-            clas="
+
+      <AuroraBackground className=" ">
+        <NavBar />
+        <section className="w-full h-[87vh] ">
+          <div
+            className="bg-cover bg-center  2xl:bg-top w-full h-full"
+            style={{ backgroundImage: `url("/landing.png")` }}
+          >
+            <Container
+              clas="
             px-9
             xs:px-10
             sm:px-12
           md:px-16
           lg:px-20
           3xl:px-32 "
-          >
-            <div
-              className="
-          pt-20 3xl:pt-28 "
             >
-              <MotionH1
-                initial={{ y: -30, opacity: 0 }}
-                viewport={{ once: true }}
-
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: "spring", delay: 0.2 }}
+              <div
                 className="
+          pt-20 3xl:pt-28 "
+              >
+                <MotionH1
+                  initial={{ y: -30, opacity: 0 }}
+                  viewport={{ once: true }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1.5, type: "spring", delay: 0.2 }}
+                  className="
           text-textColor
           text-[43px] leading-[65px] 
           sm:text-6xl sm:leading-[75px]
@@ -40,29 +45,30 @@ function Landing() {
           2xl:max-w-[50%]
           lg:text-7xl lg:leading-[90px]
            3xl:text-8xl 3xl:max-w-[60%] 3xl:leading-[110px]"
-              >
-                FROM PLANNING TO EXECUTION,
-              </MotionH1>
-              <MotionH2
-                          viewport={{ once: true }}
-
-                initial={{ y: -30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.5, type: "spring", delay: 1 }}
-                className="  
+                >
+                  FROM PLANNING TO EXECUTION,
+                </MotionH1>
+                <MotionH2
+                  viewport={{ once: true }}
+                  initial={{ y: -30, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1.5, type: "spring", delay: 1 }}
+                  className="  
           text-white
           text-[43px] leading-[65px]
           sm:text-6xl sm:leading-[75px]
           md:leading-[80px]
           lg:text-7xl lg:leading-[90px]
           3xl:text-8xl 3xl:leading-[110px]"
-              >
-                ONE STREAM{" "}
-              </MotionH2>
-            </div>
-          </Container>
-        </div>
-      </section>
+                >
+                  ONE STREAM{" "}
+                </MotionH2>
+              </div>
+            </Container>
+          </div>
+        </section>
+      </AuroraBackground>
+
       {/* section-2 */}
       <div
         className="w-full  py-56
@@ -83,9 +89,8 @@ function Landing() {
             <MotionH2
               initial={{ y: -30, opacity: 0 }}
               viewport={{ once: true }}
-
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.5, type: "spring"}}
+              transition={{ duration: 1.5, type: "spring" }}
               className="font-semibold
             text-3xl
             sm:text-4xl
@@ -95,12 +100,11 @@ function Landing() {
             >
               OUR PHILOSOPHY
             </MotionH2>
-            <Motionp
-            initial={{ y: -30, opacity: 0 }}
-            viewport={{ once: true }}
-
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, type: "spring", delay: 0.5 }}
+            <MotionDiv
+              initial={{ y: -30, opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.5, type: "spring", delay: 0.5 }}
               className="
             text-xl
             md:max-w-[90%]
@@ -110,10 +114,21 @@ function Landing() {
             font-light
             3xl:text-5xl "
             >
-              is to ensure that our work aligns with your objectives, creating
+              <TextGenerateEffect
+                className="   text-xl
+            md:max-w-[90%]
+            lg:max-w-[100%]
+            lg:text-3xl
+            xl:text-4xl
+            font-light
+            3xl:text-5xl text-black"
+                words=" is to ensure that our work aligns with your objectives, creating
               unforgettable events that leave a lasting impact while effectively
-              delivering your message.
-            </Motionp>
+              delivering your message."
+                filter
+                duration={2}
+              />
+            </MotionDiv>
           </div>
         </Container>
       </div>
@@ -128,11 +143,10 @@ function Landing() {
           3xl:px-32 "
         >
           <MotionDiv
-          initial={{ y: -30, opacity: 0 }}
-          viewport={{ once: true }}
-
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.5, type: "spring", delay: 0.6 }}
+            initial={{ y: -30, opacity: 0 }}
+            viewport={{ once: true }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5, type: "spring", delay: 0.6 }}
             className="flex flex-col max-lg:space-y-12  lg:flex-row
               justify-between"
           >
