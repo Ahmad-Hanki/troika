@@ -2,11 +2,12 @@
 
 import Slider from "react-slick";
 import GalleryItem from "./GalleryItem";
-import { gallery, company } from "../Data/data";
+import { gallery } from "../Data/data";
 import Images from "./ui/Images";
 import Container from "./Container";
 import { useRef } from "react";
 import MotionDiv, { MotionH2 } from "./MotionDiv";
+import SlideBar from "./ui/MovingSlide";
 
 function SampleNextArrow(props: {
   className?: any;
@@ -147,7 +148,6 @@ function Gallery() {
         >
           <MotionH2
             initial={{ x: -30, opacity: 0 }}
-            
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, type: "spring" }}
             viewport={{ once: true }}
@@ -177,7 +177,6 @@ function Gallery() {
                 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 viewport={{ once: true }}
-
                 key={item.id}
                 className=" w-[350px] relative "
               >
@@ -211,42 +210,8 @@ function Gallery() {
 
       {/* Companies */}
       <section className="py-20 border-t border-b border-textColorSec ">
-        <Container
-          clas=" grid place-items-center
-       grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6
-        lg:gap-12 mx-auto px-8
-         sm:px-8 md:px-12 3xl:px-20 justify-center items-center text-center "
-        >
-          <GalleryItem
-            url={company[0].url}
-            delay={0.3}
-            addClass=" w-[80%] h-[90%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
-          />
-          <GalleryItem
-            url={company[1].url}
-            delay={0.5}
-            addClass=" w-[60%] h-[50%] sm:w-[60%] sm:h-[45%]  xl:w-[150px] xl:h-[100px] photo-3 "
-          />
-          <GalleryItem
-            url={company[2].url}
-            delay={0.7}
-            addClass=" w-[60%] h-[50%] sm:w-[60%] sm:h-[45%]  xl:w-[150px] xl:h-[100px] photo-3 "
-          />
-          <GalleryItem
-            url={company[3].url}
-            delay={0.9}
-            addClass=" w-[60%] h-[50%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
-          />
-          <GalleryItem
-            url={company[4].url}
-            delay={1.1}
-            addClass=" w-[70%] h-[60%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
-          />
-          <GalleryItem
-            url={company[5].url}
-            delay={1.3}
-            addClass=" w-[70%] h-[65%] sm:w-[60%] xl:w-[200px] xl:h-[200px] photo-3  "
-          />
+        <Container>
+          <SlideBar />
         </Container>
       </section>
     </>
