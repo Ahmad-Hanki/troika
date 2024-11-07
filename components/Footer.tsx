@@ -10,33 +10,29 @@ function Footer() {
       <Container
         clas=" flex flex-col lg:flex-row md:max-lg:space-y-3 px-2
         sm:px-8 md:px-12 3xl:px-20 justify-center
-         items-center
+         lg:items-end items-center
           lg:space-x-32 xl:space-x-44 2xl:space-x-56 3xl:space-x-[425px] text-center "
       >
         <GalleryItem
           url="/footer-logo.png"
           addClass=" w-[85%] xs:w-[75%]
-         sm:w-[65%] md:w-[60%] lg:w-[420px] xl:w-[40%] 2xl:w-[30%] 3xl:w-[25%] order-first "
+         sm:w-[65%] md:w-[60%] lg:w-[420px] xl:w-[40%] 2xl:w-[30%] 3xl:w-[25%]
+         lg:h-[200px] xl:h-[170px] 3xl:h-[150px]  
+         "
         />
         <MotionDiv
           initial={{ y: -30, opacity: 0 }}
           viewport={{ once: true }}
-
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", delay: 0.1 }}
           className=" text-white
-          w-[80%] xs:w-[75%] sm:w-[65%] md:max-lg:w-[60%] 
+          w-[80%] xs:w-[75%] sm:w-[65%]  md:max-lg:w-[60%] 
           flex flex-col xl:max-w-[650px] grow 
-           items-center justify-center
-        space-y-16 lg:space-y-14 2xl:sapce-y-12"
+          items-center justify-center
+          space-y-16 lg:space-y-14 2xl:space-y-44 "
         >
-          <p className="text-start mb-8 lg:text-start text-md font-extralight">
-            E CONSEQUAT, VEL ILLUM DOLORE EU FEUGIAT NULLA FACILISIS AT VERO
-            EROS ET ACCUMSAN ET IUSTO ODIO DIGNISSIM QUI BLANDIT PRAESENT
-            LUPTATUM ZZRIL DELENIT AUGUE DUIS DOLORE TE FEUGAIT NULLA FACILISI.{" "}
-          </p>
           <nav
-            className=" max-lg:gap-y-5  gap-x-3 xs:gap-x-5 sm:gap-x-16 md:gap-x-24
+            className=" max-lg:gap-y-5   gap-x-3 xs:gap-x-5 sm:gap-x-16 md:gap-x-24
            grid grid-cols-3 w-full lg:grid-cols-5  place-content-start place-items-start	
          lg:gap-x-3 xl:gap-x-8 font-light"
           >
@@ -98,7 +94,6 @@ function Footer() {
         <MotionDiv
           initial={{ y: -30, opacity: 0 }}
           viewport={{ once: true }}
-
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", delay: 0.4 }}
           className="py-7 text-textColor flex flex-col max-lg:space-y-5 lg:flex-row lg:justify-between"

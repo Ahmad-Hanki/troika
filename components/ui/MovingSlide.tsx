@@ -34,7 +34,7 @@ const SlideBar = () => {
       >
         <div className=" flex gap-20 items-center">
           {company.map((items, i) => {
-            return <GalleryItem key={i} url={items.url} delay={0.3 * i} />;
+            return <GalleryItem key={i} url={items.url} delay={0.2 * i} addClass=" w-[150px] " />;
           })}
         </div>
       </motion.div>

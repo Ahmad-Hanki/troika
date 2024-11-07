@@ -13,7 +13,7 @@ function GalleryItem({ url, addClass, delay }: GalleryItemProps) {
       viewport={{ once: true }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.5, type: "spring", delay: delay }}
-      className={` ${addClass} " aspect-square relative overflow-hidden  w-[150px] "`}
+      className={` ${addClass}  ${ (url === "/comp-2.png" || url === "/comp-3.png") ? " w-[100px] h-[70px] " : "  "} " aspect-square relative overflow-hidden "`}
     >
       <Image
         fill

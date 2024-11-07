@@ -13,7 +13,6 @@ function VisionItem({ url, title, addClass, addClassGrid }: VisionItemProps) {
     <MotionDiv
       initial={{ y: -30, opacity: 0 }}
       viewport={{ once: true }}
-
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.5, type: "spring", delay: 0.5 }}
       className={` ${addClassGrid} "  relative flex justify-center items-center "`}

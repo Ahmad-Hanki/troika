@@ -35,7 +35,7 @@ function NavBar() {
           </nav>
           <div>
             <Button
-              className="border h-full py-1 border-textColor px-8 rounded-none"
+              className="border h-full text-textColor py-1 border-textColor px-8 rounded-none"
               asChild
               variant={"ghost"}
             >

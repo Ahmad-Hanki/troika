@@ -22,7 +22,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="pt-64 pb-36">
+    <section id="contact" className="pt-64 pb-44 bg-white">
       <Container
         clas=" flex flex-col lg:flex-row max-lg:space-y-12
         sm:px-8 md:px-12 3xl:px-20 justify-center
@@ -35,8 +35,8 @@ function Contact() {
           viewport={{ once: true }}
 
           transition={{ duration: 1.5, type: "spring" }}
-          className="text-4xl text-white  
-         order-first  xl:w-fit text-nowrap -mt-32 lg:self-start xl:text-5xl 
+          className="text-4xl text-black  
+         order-first  xl:w-fit text-nowrap  lg:self-start xl:text-5xl 
          md:text-start text-center uppercase"
         >
           Contact us
@@ -105,7 +105,7 @@ function Contact() {
           <Button
             disabled={isSubmitting}
             type="submit"
-            className=" bg-primary absolute -bottom-28 px-12 self-start
+            className=" bg-black text-white absolute -bottom-28 px-12 self-start
            disabled:bg-gray-500 text-lg py-4 rounded-none "
           >
             Submit

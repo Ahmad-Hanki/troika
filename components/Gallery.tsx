@@ -209,7 +209,7 @@ function Gallery() {
       </div>
 
       {/* Companies */}
-      <section className="py-20 border-t border-b border-textColorSec ">
+      <section className="py-20 bg-white border-t border-b border-textColorSec ">
         <Container>
           <SlideBar />
         </Container>
