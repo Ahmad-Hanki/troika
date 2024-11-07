@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import GalleryItem from "./GalleryItem";
 import MotionDiv from "./MotionDiv";
+import BecomeAClient from "./BecomeAClient";
 
 function Footer() {
   return (
@@ -65,14 +66,7 @@ function Footer() {
               <p className="text-start font-light max-w-[100%]">
                 Imam Abdullah Bin Abdulaziz, district,Riyadh 13241, Saudi Arabia
               </p>
-              <Button
-                asChild
-                variant={"default"}
-                className=" bg-primary  px-8 self-start
-           disabled:bg-gray-500 text-lg py-3 rounded-none "
-              >
-                <Link href="#contact">Contact</Link>
-              </Button>
+              <BecomeAClient />
             </div>
             <div className="flex flex-col space-y-3 justify-start items-start">
               <h3 className="text-lg text-start">Contact :</h3>
